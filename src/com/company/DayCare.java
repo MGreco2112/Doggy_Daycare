@@ -25,6 +25,7 @@ public class DayCare {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).name.equals(name)) {
                 list.remove(i);
+                i--;
             }
         }
     }
