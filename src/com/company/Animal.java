@@ -22,4 +22,8 @@ public class Animal {
         return "---";
     }
 
+    public String toString() {
+        return String.format("Name: %s, Legs: %s, Size: %s", this.name, this.legs, this.size);
+    }
+
 }
