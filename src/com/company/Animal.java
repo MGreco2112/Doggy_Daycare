@@ -7,6 +7,7 @@ public class Animal {
     String name;
     Boolean isFixed;
     Boolean isOwned;
+    public int weight;
 
 
     public Animal (int legs, String size, String name, Boolean isFixed, Boolean isOwned) {
