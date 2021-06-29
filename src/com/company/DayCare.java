@@ -15,6 +15,8 @@ public class DayCare {
                 System.out.println("Dog\n" + list.get(i));
             } else if (list.get(i) instanceof Cat) {
                 System.out.println("Cat\n" + list.get(i));
+            } else {
+                System.out.println("Animal\n" + list.get(i));
             }
         }
     }
