@@ -24,8 +24,7 @@ public class DayCare {
     public static void removeAnimal(String name, ArrayList<Animal> list) {
         for (int i = 0; i < list.size(); i++) {
             if (list.get(i).name.equals(name)) {
-                list.remove(i);
-                i--;
+                list.remove(i--);
             }
         }
     }
