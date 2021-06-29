@@ -1,10 +1,10 @@
 package com.company;
 
 public class Cat extends Animal{
-    String pattern;
-    String noise;
-    Boolean wasStray;
-    Boolean hasShots;
+    public String pattern;
+    public String noise;
+    public Boolean wasStray;
+    public Boolean hasShots;
 
     public Cat (int legs, String size, String name, String pattern, String noise, Boolean wasStray, Boolean isFixed,
                 Boolean isOwned, Boolean hasShots) {

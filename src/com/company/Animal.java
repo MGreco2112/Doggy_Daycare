@@ -2,12 +2,12 @@ package com.company;
 
 public class Animal {
 
-    int legs;
-    String size;
-    String name;
-    Boolean isFixed;
-    Boolean isOwned;
-    public double weight;
+    public int legs;
+    public String size;
+    public String name;
+    public Boolean isFixed;
+    public Boolean isOwned;
+
 
 
     public Animal (int legs, String size, String name, Boolean isFixed, Boolean isOwned) {

@@ -3,9 +3,9 @@ package com.company;
 public class Dog extends Animal{
 
     public final String breed;
-    String chipId;
-    String snoutLength;
-    String noise;
+    public String chipId;
+    public String snoutLength;
+    public String noise;
 
 
     public Dog(int legs, String size, String name, String noise, String snoutLength, String breed, String chipId,
