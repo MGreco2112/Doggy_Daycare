@@ -2,7 +2,7 @@ package com.company;
 
 public class Dog extends Animal{
 
-    String breed;
+    public final String breed;
     String chipId;
     String snoutLength;
     String noise;
