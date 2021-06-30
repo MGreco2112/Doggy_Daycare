@@ -23,7 +23,7 @@ public class Dog extends Animal{
         if (!this.noise.equals("")) {
             return this.noise;
         } else {
-            return "Awoo!!!";
+            return super.speak();
         }
     }
 

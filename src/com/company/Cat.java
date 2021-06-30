@@ -22,7 +22,7 @@ public class Cat extends Animal{
         if (!this.noise.equals("")) {
             return this.noise;
         } else {
-            return "Beow!!!";
+            return super.speak();
         }
     }
 
