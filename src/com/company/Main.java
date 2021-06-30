@@ -14,7 +14,7 @@ public class Main {
         DayCare doggyDayCare = new DayCare();
 
         doggyDayCare.addAnimal(new Dog(4, "Small", "Holly", "", "Short", "Cavishon", "#337", Boolean.TRUE, Boolean.TRUE));
-        doggyDayCare.addAnimal(new Cat(4, "Small", "Zippy", "Calico", "", Boolean.TRUE, Boolean.TRUE, Boolean.FALSE,
+        doggyDayCare.addAnimal(new Cat(4, "Small", "Zippy", "Calico", "Beow", Boolean.TRUE, Boolean.TRUE, Boolean.FALSE,
                         Boolean.FALSE));
 
         doggyDayCare.displayAnimals();
