@@ -5,35 +5,37 @@ import java.util.ArrayList;
 
 public class DayCare {
 
-    public static void addAnimal(Animal newAnimal, ArrayList<Animal> desiredList) {
-        desiredList.add(newAnimal);
+    ArrayList<Animal> animals = new ArrayList<>();
+
+    public void addAnimal(Animal newAnimal) {
+        animals.add(newAnimal);
     }
 
-    public static void displayAnimals(ArrayList<Animal> list) {
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i) instanceof Dog) {
-                System.out.println("Dog\n" + list.get(i));
-            } else if (list.get(i) instanceof Cat) {
-                System.out.println("Cat\n" + list.get(i));
+    public void displayAnimals() {
+        for (int i = 0; i < animals.size(); i++) {
+            if (animals.get(i) instanceof Dog) {
+                System.out.println("Dog\n" + animals.get(i));
+            } else if (animals.get(i) instanceof Cat) {
+                System.out.println("Cat\n" + animals.get(i));
             } else {
-                System.out.println("Animal\n" + list.get(i));
+                System.out.println("Animal\n" + animals.get(i));
             }
         }
     }
 
-    public static void removeAnimal(String name, ArrayList<Animal> list) {
-        for (int i = 0; i < list.size(); i++) {
-            if (list.get(i).name.equals(name)) {
-                list.remove(i--);
+    public void removeAnimal(String name) {
+        for (int i = 0; i < animals.size(); i++) {
+            if (animals.get(i).name.equals(name)) {
+                animals.remove(i--);
             }
         }
     }
 
-    public static void animalNoises(ArrayList<Animal> list) {
-        for (int i = 0; i < list.size(); i++) {
+    public void animalNoises() {
+        for (int i = 0; i < animals.size(); i++) {
 
 
-            System.out.println(list.get(i).name + " goes " + list.get(i).speak());
+            System.out.println(animals.get(i).name + " goes " + animals.get(i).speak());
         }
     }
 

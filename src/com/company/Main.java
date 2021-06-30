@@ -4,25 +4,25 @@ import java.util.ArrayList;
 
 public class Main {
 
-    static ArrayList<Animal> daycareAnimals = new ArrayList<>();
+//    static ArrayList<Animal> daycareAnimals = new ArrayList<>();
 
     public static void main(String[] args) {
 
 //        Dog holly = new Dog(4, "Small", "Holly", "Yip-Yip!", "Short", "Cavishon", "#337", Boolean.TRUE, Boolean.TRUE);
 //        holly.speak();
 
+        DayCare doggyDayCare = new DayCare();
 
-        DayCare.addAnimal(new Dog(4, "Small", "Holly", "", "Short", "Cavishon", "#337", Boolean.TRUE, Boolean.TRUE)
-                        , daycareAnimals);
-        DayCare.addAnimal(new Cat(4, "Small", "Zippy", "Calico", "", Boolean.TRUE, Boolean.TRUE, Boolean.FALSE,
-                        Boolean.FALSE), daycareAnimals);
+        doggyDayCare.addAnimal(new Dog(4, "Small", "Holly", "", "Short", "Cavishon", "#337", Boolean.TRUE, Boolean.TRUE));
+        doggyDayCare.addAnimal(new Cat(4, "Small", "Zippy", "Calico", "", Boolean.TRUE, Boolean.TRUE, Boolean.FALSE,
+                        Boolean.FALSE));
 
-        DayCare.displayAnimals(daycareAnimals);
-        DayCare.animalNoises(daycareAnimals);
+        doggyDayCare.displayAnimals();
+        doggyDayCare.animalNoises();
 
-        DayCare.removeAnimal("Zippy", daycareAnimals);
+        doggyDayCare.removeAnimal("Zippy");
 
-        DayCare.displayAnimals(daycareAnimals);
+        doggyDayCare.displayAnimals();
 
 
 
